@@ -1,0 +1,90 @@
+@font-face {
+	font-family: 'DreamOrphans';
+	src: url('../Font/Dream_Orphans.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	font-family: 'DreamOrphans', sans-serif;
+	letter-spacing: 2px;
+	background-color: #330019;
+}
+p{
+	letter-spacing: 1px;
+}
+.header {
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+	padding: 0px 0px 30px 0px;
+	background-color: #333;
+	color: wheat;
+}
+
+.logo {
+flex: 1;
+}
+
+.nav {
+display: flex;
+gap: 20px;
+}
+
+.nav a {
+text-decoration: none;
+color: wheat;
+font-weight: bold;
+}
+
+.section0{
+	background-color: wheat;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	color: #333;
+	text-align: center;
+	padding:10px;
+}
+.section1{
+	background-color: #333;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	color: wheat;
+	text-align: center;
+	padding:10px;
+}
+
+.section1 a{
+	margin:10px;
+	color: wheat;
+	font-size:x-large;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.section0 a{
+	margin:10px;
+	color: #333;
+	font-size:x-large;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: wheat;
+	color: #333;
+	text-align: center;
+	padding: 10px;
+	align-items:center;
+}
+.footer a{
+	text-decoration: none;
+	color: #333;
+	font-weight: bold;
+}

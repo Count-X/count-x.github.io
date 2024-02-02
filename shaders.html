@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" href="css/shared.css">
+	<link rel="stylesheet" href="css/shaders.css">
+	<script type="text/javascript" src="https://rawgit.com/patriciogonzalezvivo/glslCanvas/master/dist/GlslCanvas.js"></script>
+	<title>Markus Linnanen Shaders</title>
+</head>
+<body>
+	<header class="header">
+		<div class="logo">
+			<h1 style="font-size:xx-large;">Shaders</h1>
+		</div>
+		<nav class="nav">
+		<a href="index.html">Home</a>
+		<a href="projects.html">Projects</a>
+		<a href="shaders.html">Shaders</a>
+		<a href="games.html">Games</a>
+		<a href="blog.html">Blog</a>
+		</nav>
+	</header>
+	<div class="section0">
+		<canvas class="glslCanvas"  width="200" height="200" data-fragment="
+			// My first shader, kinda scuffed implementation but i do what i must
+			#ifdef GL_ES
+			precision mediump float;
+			#endif
+
+			uniform float u_time;
+			uniform vec2 u_resolution;
+			
+			void main(){
+				float colNum = floor(sin((gl_FragCoord.y + u_time * 25.0)/ 10.0) + 1.0);
+				gl_FragColor = vec4(vec3(colNum),  .5);
+			}
+		"></canvas>
+		<div style="margin:10px;">
+			<a href="https://github.com/Count-X/shaderCache/blob/main/hologram.frag">Hologram</a>
+			<p>
+				This was my first shader and it is a simple implementation of a hologram visual<br>
+			</p>
+		</div>
+	</div>
+
+<footer class="footer">
+	<a href="https://www.instagram.com/markusl1nn/">Instagram</a>
+	<p>Discord: gordon__freeman</p>
+</footer>
+
+</body>
