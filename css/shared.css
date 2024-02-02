@@ -73,14 +73,16 @@ font-weight: bold;
 }
 
 .footer {
+	display: flex;
+	flex-direction: row;
+	justify-content:space-evenly;
 	position: fixed;
 	left: 0;
 	bottom: 0;
+	height: 5%;
 	width: 100%;
 	background-color: wheat;
 	color: #333;
-	text-align: center;
-	padding: 10px;
 	align-items:center;
 }
 .footer a{
