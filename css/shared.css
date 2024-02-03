@@ -56,6 +56,10 @@ font-weight: bold;
 	padding:10px;
 }
 
+.section0, .section1 h2{
+	font-size: medium;
+}
+
 .section1 a{
 	margin:10px;
 	color: wheat;
@@ -77,13 +81,14 @@ font-weight: bold;
 	flex-direction: row;
 	justify-content:space-evenly;
 	position: fixed;
-	left: 0;
+	left: 0.5%;
 	bottom: 0;
 	height: 5%;
-	width: 100%;
+	width: 99%;
 	background-color: wheat;
 	color: #333;
 	align-items:center;
+	border: 3px double #333;
 }
 .footer a{
 	text-decoration: none;
