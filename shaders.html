@@ -42,6 +42,32 @@
 		</div>
 	</div>
 
+	<!--
+	<div class="section1">
+		<div style="margin:10px;">
+			<a href="https://github.com/Count-X/shaderCache/blob/main/hologram.frag">Grain Shaded Gradient Map</a>
+			<p>
+				A grain shaded gradient map inspired by a photoshop video tutorial<br><br>
+				<a style="text-decoration: none; font-size: medium;" href="https://www.youtube.com/watch?v=1poWgZWpsiY&t=476s&ab_channel=Texturelabs">Link to video</a><br>
+			</p>
+		</div>
+		<canvas class="glslCanvas"  width="200" height="200" data-fragment="
+			// My first shader, kinda scuffed implementation but i do what i must
+			#ifdef GL_ES
+			precision mediump float;
+			#endif
+
+			uniform float u_time;
+			uniform vec2 u_resolution;
+			
+			void main(){
+				float colNum = floor(sin((gl_FragCoord.y + u_time * 25.0)/ 10.0) + 1.0);
+				gl_FragColor = vec4(vec3(colNum),  .5);
+			}
+		"></canvas>
+	</div>
+	-->
+
 
 	<footer class="footer">
 		<p>Email: markus.s.linnanen@gmail.com</p>
