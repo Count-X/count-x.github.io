@@ -1,4 +1,3 @@
-#version 450
 // Grain Shaded Gradient Map by Markus Linnanen aka. Count-X & Webscum
 
 #ifdef GL_ES
